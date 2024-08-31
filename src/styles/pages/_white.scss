@@ -336,7 +336,10 @@ width: 100%;
     bottom: 350px;
     display: flex;
     flex-direction: column;
-  
+    @media (max-width: 768px) {
+        display: none;
+       
+    }
     z-index: 1000; 
 
     .fixedbutton {
