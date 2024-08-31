@@ -52,20 +52,20 @@ table {
   border-spacing: 0;
 }
 
-#work .images .aboutimg img, .zub img, .drcard .icon img, #footer .about .logo img, .images .aboutimg .imgone img, .drcards .drphoto img, #service .images .aboutimg .imgthree img, #service .images .aboutimg .imgtwo img, #service .images .aboutimg .imgone img, #intropart .dr .woman .profile .image img, #intropart .dr .woman img, .logo .logoimg img {
+.photos img, .first .dentist img, #work .images .aboutimg img, .zub img, .drcard .icon img, #footer .about .logo img, .images .aboutimg .imgone img, .drcards .drphoto img, #service .images .aboutimg .imgthree img, #service .images .aboutimg .imgtwo img, #service .images .aboutimg .imgone img, #intropart .dr .woman .profile .image img, #intropart .dr .woman img, .logo .logoimg img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#work .accordion .accordion-item .accordion-header .accordion-button, .drcard, #video .video, #footer .links, #footer .about, #map .intro .info .contacts, #map .intro .info, #client .drcards .drtxt, #client .drcards, .context .leftright .left, .context .leftright, .context .first, .context, .images .aboutimg .imgtwo .rate, .images .aboutimg .imgtwo .firsttxt, .drcards .drtxt, .drcards .drphoto .connect ul .square, .drcards .drphoto .connect ul, .drcards, #service .intro .checks, #intropart .intro .degree .stars, #intropart .intro .degree, #contacts .contactf .tel, .list ul .pages, .list ul, .list {
+.accordion .accordion-item .accordion-header .accordion-button, .txt .intro .checks, .leftsecond .services, #work .accordion .accordion-item .accordion-header .accordion-button, .drcard, #video .video, #footer .links, #footer .about, #map .intro .info .contacts, #map .intro .info, #client .drcards .drtxt, #client .drcards, .context .leftright .left, .context .leftright, .context .first, .context, .images .aboutimg .imgtwo .rate, .images .aboutimg .imgtwo .firsttxt, .drcards .drtxt, .drcards .drphoto .connect ul .square, .drcards .drphoto .connect ul, .drcards, #service .intro .checks, #intropart .intro .degree .stars, #intropart .intro .degree, #contacts .contactf .tel, .list ul .pages, .list ul, .list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#footer .links ul h3, #footer .links ul li a, #footer .about .content p, #map .intro .info .contacts p, .context .first p, .context p, .images .aboutimg .imgtwo .rate p, .images .aboutimg .imgtwo .firsttxt p, .drcards .drtxt p {
+.txt .intro h4, .leftsecond .services .txt, .leftfirst .services ul li p, #footer .links ul h3, #footer .links ul li a, #footer .about .content p, #map .intro .info .contacts p, .context .first p, .context p, .images .aboutimg .imgtwo .rate p, .images .aboutimg .imgtwo .firsttxt p, .drcards .drtxt p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -93,10 +93,17 @@ body {
   font-size: 16px;
   font-weight: 500;
   padding: 14px 15px !important;
-  color: var(--primary-color);
+  color: #0E384C;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
   font-family: "Poppins", sans-serif;
+}
+.list ul .pages li a {
+  text-decoration: none;
+  color: #0E384C;
+}
+.list ul .pages li a:hover {
+  color: #1E84B5;
 }
 .list ul .pages:hover {
   color: #1E84B5;
@@ -1358,6 +1365,292 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 #work .accordion .accordion-item .accordion-collapse .accordion-body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #527282;
+  line-height: 1.8em;
+}
+
+.leftfirst {
+  margin-bottom: 40px;
+}
+.leftfirst .services {
+  background-color: #EFF8FF;
+  border-radius: 30px;
+  padding: 30px 30px 10px 30px;
+  margin-right: 50px;
+}
+.leftfirst .services h2 {
+  font-family: "Poppins", sans-serif;
+  color: #0E384C;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.leftfirst .services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.leftfirst .services ul li {
+  transition: transform all 0.3s ease-in-out;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdef5;
+}
+.leftfirst .services ul li:last-child {
+  border-bottom: none;
+}
+.leftfirst .services ul li p {
+  color: #0E384C;
+  line-height: 2.5em;
+}
+.leftfirst .services ul li i {
+  color: #1E84B5;
+  font-size: 1.2rem;
+  transform: rotate(-30deg);
+  transition: transform all 0.3s ease-in-out;
+}
+.leftfirst .services ul li:hover i {
+  transform: rotate(0deg);
+}
+.leftfirst .services ul li:hover p {
+  color: #1E84B5;
+}
+
+.leftsecond .services {
+  background-color: #1E84B5;
+  flex-direction: column;
+  border-radius: 30px;
+  padding: 40px;
+  margin-right: 50px;
+}
+.leftsecond .services .question {
+  margin-bottom: 20px;
+}
+.leftsecond .services h2 {
+  font-family: "Poppins", sans-serif;
+  color: #FFFFFF;
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.leftsecond .services .txt {
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  line-height: 2em;
+}
+.leftsecond .services .txt p {
+  text-align: center;
+}
+.leftsecond .services .btn-book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: white;
+  color: #1E84B5;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.leftsecond .services .btn-book p {
+  position: relative;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: 600;
+}
+.leftsecond .services .btn-book i {
+  margin-left: 10px;
+  display: inline-block;
+  background-color: #1E84B5;
+  border-radius: 50%;
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  color: white;
+  rotate: -30deg;
+}
+.leftsecond .services .btn-book::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0E384C;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.4s ease-in-out;
+  border-radius: 50px;
+  z-index: 0;
+}
+.leftsecond .services .btn-book:hover::before {
+  transform: scaleX(1);
+}
+.leftsecond .services .btn-book:hover i {
+  transform: rotate(30deg);
+}
+.leftsecond .services .btn-book:hover {
+  color: #FFFFFF;
+  background-color: rgba(28, 129, 173, 0.082);
+}
+
+.first .dentist {
+  height: 510px;
+  overflow: hidden;
+  width: 100%;
+  border-radius: 40px;
+}
+.txt .intro {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .txt .intro {
+    margin-top: 0;
+  }
+}
+.txt .intro h4 {
+  color: #0E384C;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.txt .intro h3 {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #1E84B5;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.txt .intro h1 {
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2em;
+  color: #0E384C;
+}
+.txt .intro h1 span {
+  color: #1E84B5;
+}
+.txt .intro .text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.8em;
+  font-family: "Poppins", sans-serif;
+  color: #527282;
+  font-size: 16px;
+  font-weight: 400;
+}
+.txt .intro .checks {
+  margin-bottom: 1.5rem;
+  justify-content: start;
+  gap: 10px;
+}
+.txt .intro .checks .check i {
+  color: #1E84B5;
+  font-weight: 900;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.txt .intro .checks .checktxt {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0E384C;
+}
+
+.photos {
+  height: 322px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+.text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.8em;
+  font-family: "Poppins", sans-serif;
+  color: #527282;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 44px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.2em;
+  color: #0E384C;
+  margin-bottom: 60px;
+}
+
+.accordion {
+  margin-bottom: 20px;
+}
+.accordion .accordion-item {
+  border-radius: 8px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.245);
+}
+.accordion .accordion-item .accordion-header {
+  margin: 0.5em 0;
+}
+.accordion .accordion-item .accordion-header .accordion-button {
+  font-family: "Poppins", sans-serif;
+  color: #0E384C;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  border: none;
+  box-shadow: none;
+  padding: 5px 20px 5px 20px;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  color: #0E384C;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+.accordion .accordion-item .accordion-header .accordion-button .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url("https://demo.awaikenthemes.com/html-preview/dentaire/images/arrow-white.svg");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+.accordion .accordion-item .accordion-header .accordion-button.collapsed::after {
+  transform: rotate(-360deg);
+}
+.accordion .accordion-item .accordion-header .accordion-button:focus {
+  z-index: 3;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.accordion .accordion-item .accordion-collapse .accordion-body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
