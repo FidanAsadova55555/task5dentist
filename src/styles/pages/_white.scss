@@ -60,7 +60,7 @@
         margin-bottom: 40px;
     }
     .leftsecond{
-    
+        margin-bottom: 40px;
         .services {
            background-color: $accent-color;@extend %display;
            flex-direction: column;
@@ -330,3 +330,39 @@ width: 100%;
       }
     }
   }
+  .fixedbuttons {
+    position: fixed;
+    right: 0px; 
+    bottom: 350px;
+    display: flex;
+    flex-direction: column;
+  
+    z-index: 1000; 
+
+    .fixedbutton {
+        background-color: #ffffff;
+      text-decoration: none;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.064);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px; 
+        height: 50px;
+        border: 1px solid rgba(128, 128, 128, 0.132);
+   
+        
+       
+
+        i {
+          font-size: 25px;
+          color: $primary-color;
+        }
+    }
+    .one{
+        border-top-left-radius:10px ;
+    }
+    .two{
+        border-bottom-left-radius: 10px;
+    }
+}

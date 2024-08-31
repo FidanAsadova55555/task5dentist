@@ -1422,6 +1422,9 @@ body {
   color: #1E84B5;
 }
 
+.leftsecond {
+  margin-bottom: 40px;
+}
 .leftsecond .services {
   background-color: #1E84B5;
   flex-direction: column;
@@ -1656,4 +1659,35 @@ h1 {
   font-weight: 400;
   color: #527282;
   line-height: 1.8em;
+}
+
+.fixedbuttons {
+  position: fixed;
+  right: 0px;
+  bottom: 350px;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+.fixedbuttons .fixedbutton {
+  background-color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.064);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.132);
+}
+.fixedbuttons .fixedbutton i {
+  font-size: 25px;
+  color: #0E384C;
+}
+.fixedbuttons .one {
+  border-top-left-radius: 10px;
+}
+.fixedbuttons .two {
+  border-bottom-left-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
