@@ -1,0 +1,125 @@
+#service{
+
+    .images{
+        .aboutimg{
+            width: 570px;
+            height: 593px;
+            
+            
+            margin-top: 110px;
+            margin-bottom: 130px;
+            position: relative;
+            .imgone {
+                width: 410px;
+                height: 393.6px;
+                border-radius: 40px;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                img {
+                    @extend %img;
+                }
+            
+            }
+            
+              
+
+            .imgtwo {
+                width: 396.8px;
+                height: 285.69px;
+                border-radius: 40px;
+                overflow: hidden;
+                position: absolute;
+                outline: 8px solid $white;
+                top: 320px;
+                left: 180px;
+            padding: 0;
+                img {
+                    @extend %img;
+                }
+            
+              
+            }
+            
+            
+            .imgthree{
+                width: 146px;
+                height:146px;
+              
+                overflow: hidden;
+                position: absolute;
+              
+                top: 75px;
+                right:75px;
+                
+                img{
+                    @extend %img;
+                }
+            }
+        }
+    }
+    .intro{ margin-top: 200px;
+                      
+    @media (max-width: 768px) {
+        margin-top: 0;
+        
+    }  
+        margin-bottom: 150px;
+        h3{
+            display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color:$accent-color;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-family: $basefont;
+        }
+        h1{
+            font-size: 44px;
+            font-weight: 700;
+            font-family: $basefont;
+            line-height: 1.2em;
+            color: $primary-color;
+            span{
+                color: $accent-color;
+            }
+        }
+    
+        .text{margin-top: 20px;
+            margin-bottom: 40px;line-height: 1.8em;
+            font-family: $basefont;
+            color: $text-color;
+        font-size: 16px;
+        font-weight: 400;
+    
+        }
+        .checks{
+            margin-bottom: 1.5rem;
+            @extend %display;
+            justify-content: start;
+            gap: 10px;
+            
+            .check{
+                i{
+                    color: $accent-color;
+                    font-weight: 900;
+    font-size: 20px;
+    font-family: $basefont;
+                }
+            }
+            .checktxt{  font-family: $basefont;
+                font-size: 16px;
+                font-weight: 600;
+               
+    color: $primary-color;
+
+            }
+        }
+        
+    }
+}

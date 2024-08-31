@@ -1,0 +1,184 @@
+#video{
+    .video{
+        position: relative;
+        overflow: hidden;
+width: 100%;
+height: 536px;
+border-radius: 40px;
+@extend %display;
+flex-direction: column;
+
+
+        background-image: url(	https://demo.awaikenthemes.com/html-preview/dentaire/images/visit-clinic-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+     
+        .opening{
+            
+            .intro{
+                h3{
+                   
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.5em;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color:$white;
+            padding-left: 10px;
+            margin-bottom: 10px;
+            font-family: $basefont;
+            text-align: center;
+            position: relative;
+            z-index: index 2;;
+                }
+                h1{
+                    font-size: 44px;
+                    font-weight: 700;
+                    font-family: $basefont;
+                    line-height: 1.2em;
+                    color: $white;
+                    text-align: center;
+                    position: relative;
+            z-index: index 2;;
+                   
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0e384c5f;
+                  
+                    
+                
+                   
+                    z-index: 0;
+                  }
+                
+            
+               
+        }
+    }
+    .btn-book {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 10px 10px 20px;
+        border: none;
+        border-radius: 50px;
+        background-color:#1E84B5;;
+        color: white;
+        font-family: $basefont;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        
+      
+        p {
+          position: relative; 
+          z-index: 1; 
+          font-size: 14px;
+          font-weight: 600;
+        }
+      
+        i {
+          margin-left: 10px;
+          display: inline-block;
+          background-color: white;
+          border-radius: 50%;
+          padding: 5px;
+          transition: all 0.5s ease-in-out;
+          position: relative; 
+          z-index: 1;
+          color: #1E84B5;; 
+          rotate:(0deg);
+        }
+      
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color:white;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: all 0.4s ease-in-out;
+          border-radius: 50px;
+          z-index: 0;
+        }
+      
+        &:hover::before {
+          transform: scaleX(1);
+        }
+      
+        &:hover i {
+            color: white;
+          transform: rotate(0deg); 
+          background-color: $primary-color;
+        }
+     
+        &:hover {
+            color: $primary-color;
+            background-color: rgba(28, 129, 173, 0.082); 
+          }
+        
+      }
+    }
+    .numbers {
+       margin: 60px 0;
+    
+        .header {
+            margin-bottom: 10px;
+        }
+    
+        .number {
+            font-weight: 700;
+    line-height: 1.2em;
+    color: $primary-color;
+    font-family: $basefont;
+    font-size: 44px;
+    margin-bottom: 5px;
+        }
+    
+        .title {
+           
+            
+            color: $primary-color;
+            font-family: $basefont;line-height: 1.2em;
+          
+    
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            @media (max-width: 768px) {
+              font-size: 13px;
+             
+          }
+        }
+    
+        .txt {
+            font-family: $basefont;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: $text-color;
+    border-top: 1px solid $divider-color;
+    padding-top: 20px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+     
+  }
+        }
+    }
+    
+    }
+  
